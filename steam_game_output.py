@@ -4,11 +4,12 @@ import pytz
 import requests
 import pandas as pd
 import sys
+import os
+from dotenv import load_dotenv
 
 # Read in and store Steam API key
-api_file = open("SteamKey.txt","r")
-api_key = api_file.readline()
-api_file.close()
+load_dotenv()
+api_key = os.getenv('STEAM_KEY')
 
 # Player Steam IDs
 player_id = {
