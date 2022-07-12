@@ -1,0 +1,9 @@
+os
+random
+discord.ext
+dotenv
+datetime
+pytz
+requests
+pandas
+sys
